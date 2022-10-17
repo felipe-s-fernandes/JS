@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Aula 02 - Exercícios</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <label for="primeiro-numero">Primeiro número:</label>
+        <input type="number" id="primeiro-numero" name="primeiro-numero">
+        <label for="segundo-numero">Segundo número:</label>
+        <input type="number" id="segundo-numero" name="segundo-numero">
+        <button onclick="comparaNumero()">Compare os números!</button>
+        <p id="compara-numero"></p>
+    </form>
+
+    <form onsubmit="return false">
+        <label for="primeiro-string">Primeiro string:</label>
+        <input type="text" id="primeiro-string">
+        <label for="segundo-string">Segundo string:</label>
+        <input type="text" id="segundo-string">
+        <button onclick="comparaString()">Compare os strings!</button>
+        <p id="compara-string"></p>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
