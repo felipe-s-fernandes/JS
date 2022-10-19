@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 03</title>
+    </head>
+    <body>
+        <form>
+            <h1>Calculadora Hopper</h1>
+            <div class="operand">
+                <label for="operand-1">Operando 1</label>
+                <input type="number" name="operand-1" id="operand-1">
+            </div>
+            <div class="operand">
+                <label for="operand-2">Operando 2</label>
+                <input type="number" name="operand-2" id="operand-2">
+            </div>
+            <div class="result-div">
+                <select name="operator" id="operator">
+                    <option value="" disbled selected>Selecione uma operação</option>
+                    <option value="add">Adição +</option>
+                    <option value="sub">Subtração -</option>
+                    <option value="mult">Multiplicação *</option>
+                    <option value="div">Divisão ÷</option>
+                </select>
+
+                <button type="button" onclick="operacao()">Calcular!</button>
+                <p id="result">...</p>
+            </div>
+
+            <figure>
+                <img src="https://app.alphaedtech.org.br/assets/mascot-hopper.67c0fb4f.png" alt="">
+            </figure>
+        </form>
+
+
+       <script src="./index.js"></script> 
+    </body>
+</html>

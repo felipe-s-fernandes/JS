@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 10px;
+
+    transition: all 0.7s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+
+    border: 3px solid rgb(53, 53, 53);
+    box-shadow: -5px 5px 10px rgb(53, 53, 53);
+}
+
+.operand {
+    background-color: rgb(92 178 154);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.operand label {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+.operand input {
+    width: 50%;
+    text-align: center;
+}
+
+.result-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result-div select {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.result-div button {
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px;
+}
+
+#result {
+    background-color: aliceblue;
+    min-width: 50%;
+    border: solid 2px black;
+    border-radius: 10px;
+
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+}
