@@ -7,8 +7,6 @@
     box-sizing: border-box;
     font-size: 16px;
     border-radius: 10px;
-
-    transition: all 0.7s;
 }
 
 input::-webkit-outer-spin-button,
