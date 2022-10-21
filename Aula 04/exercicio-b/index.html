@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../index.css">
+        <title>Aula 04-b</title>
+    </head>
+    <body>
+        <form>
+            <h1>Sorteio!</h1>
+            <p>Insira os valores INTEIROS mínimo e máximo para a realização do sorteio!</p>
+            <div class="input-box">
+                <label for="min">Valor mínimo</label>
+                <input type="text" name="min" id="min" placeholder="Insira um valor...">
+            </div>
+            <div class="input-box">
+                <label for="max">Valor máximo</label>
+                <input type="text" name="max" id="max" placeholder="Insira um valor...">
+            </div>
+
+            <button type="button" value="sort" onclick="sortNumber()">Sortear!</button>
+            
+            <div class="input-box">
+                <label for="imc">Valor sorteado</label>
+                <input type="text" name="output" class="output" id="output" disabled value="">
+            </div>
+            
+            <figure>
+                <img src="https://app.alphaedtech.org.br/assets/mascot-hopper.67c0fb4f.png" alt="">
+            </figure>
+        </form>
+
+
+       <script src="./index.js"></script> 
+    </body>
+    </body>
+</html>

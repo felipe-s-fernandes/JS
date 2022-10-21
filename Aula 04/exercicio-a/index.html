@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../index.css">
+        <title>Aula 04-a (IMC)</title>
+    </head>
+    <body>
+        <form>
+            <h1>Calculadora de IMC</h1>
+            <p>Insira seu peso e altura para calcular o IMC!</p>
+            <div class="input-box">
+                <label for="weight">Peso (kg)</label>
+                <input type="text" name="weight" id="weight" placeholder="Insira um valor...">
+            </div>
+            <div class="input-box">
+                <label for="height">Altura (cm)</label>
+                <input type="text" name="height" id="height" placeholder="Insira um valor...">
+            </div>
+
+            <button type="button" value="Calcular IMC" onclick="calculaIMC()">Calcular IMC!</button>
+            
+            <div class="input-box">
+                <label for="output">IMC</label>
+                <input type="text" name="output" class="output" id="output" disabled value="">
+            </div>
+
+            <p id="result"> </p>
+            
+            <figure>
+                <img src="https://app.alphaedtech.org.br/assets/mascot-hopper.67c0fb4f.png" alt="">
+            </figure>
+        </form>
+
+
+       <script src="./index.js"></script> 
+    </body>
+    </body>
+</html>
