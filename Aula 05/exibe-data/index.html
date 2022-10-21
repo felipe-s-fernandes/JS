@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../index.css">
+        <title>Aula 05 - Data!</title>
+    </head>
+    <style>
+        .input-box {
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+        button {
+            margin-top: 15px;
+        }
+    </style>
+    <body>
+        <form>
+            <h1>Data!</h1>
+            <p>Insira uma data e exiba suas informações!</p>
+            <div class="input-box">
+                <label for="input">Data</label>
+                <input type="date" name="input" id="input" placeholder="Insira um valor...">
+            </div>
+            <button type="button" value="" onclick="writeDateInformation()">Exibir</button>
+            
+            <div class="input-box">
+                <label for="">Dia</label>
+                <input type="text" name="" class="output" id="date" disabled value="">
+            </div>
+            <div class="input-box">
+                <label for="">Mês</label>
+                <input type="text" name="" class="output" id="month" disabled value="">
+            </div>
+            <div class="input-box">
+                <label for="">Ano</label>
+                <input type="text" name="" class="output" id="year" disabled value="">
+            </div>
+            <div class="input-box">
+                <label for="">Dia da semana</label>
+                <input type="text" name="" class="output" id="day" disabled value="">
+            </div>
+            <div class="input-box">
+                <label for="">Nome do mês</label>
+                <input type="text" name="" class="output" id="monthName" disabled value="">
+            </div>
+            <div class="input-box">
+                <label for="">Timestamp</label>
+                <input type="text" name="" class="output" id="timestamp" disabled value="">
+            </div>  
+            
+            <figure>
+                <img src="https://app.alphaedtech.org.br/assets/mascot-hopper.67c0fb4f.png" alt="">
+            </figure>
+        </form>
+
+
+       <script src="./index.js"></script> 
+    </body>
+    </body>
+</html>

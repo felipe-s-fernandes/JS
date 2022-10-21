@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../index.css">
+        <title>Aula 05 - Escolha personagem!</title>
+    </head>
+    <body>
+        <form>
+            <h1>Escolha um personagem!</h1>
+            <p>Selecione um personagem da lista abaixo para exibir sua foto!</p>
+
+            <div class="input-box vertical">
+                <label for="input">Personagem escolhido</label>
+                <select name="input" id="input">
+                    <option value="" selected disabled>Escolha um personagem...</option>
+                    <option value="rean">Rean Schwarzer</option>
+                    <option value="altina">Altina Orion</option>
+                    <option value="lloyd">Lloyd Bannings</option>
+                    <option value="crow">Crow Armbrust</option>
+                    <option value="aurelia">Aurelia Le Guin</option>
+                </select>
+            </div>
+
+            <button type="button" value="" onclick="changeImg()">Exibir</button>
+            
+            <figure>
+                <img src="https://app.alphaedtech.org.br/assets/mascot-hopper.67c0fb4f.png" alt="" id="image">
+            </figure>
+        </form>
+
+
+       <script src="./index.js"></script> 
+    </body>
+    </body>
+</html>
