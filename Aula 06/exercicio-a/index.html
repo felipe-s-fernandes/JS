@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 06 - Super trunfo</title>
+    </head>
+        <style>
+        .input-box {
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+        button {
+            margin-top: 15px;
+        }
+    </style>
+    <body>
+        <section class="card">
+            <div class="card-top">
+                <span class="carro-logo">SUPER TRUNFO</span><span id="trait">OS MELHORES</span>
+            </div>
+            <figure></figure>
+            <select name="carName" id="carName">
+                <option id="test" value="" selected disabled>Selecione um carro...</option>
+                <option value="trailblazer">Chevrolet Trailblazer V6</option>
+                <option value="audi">Audi A3 Sedan 2.0</option>
+                <option value="peugeot">Peugeot 208 1.2</option>
+                <option value="bmw">BMW x4 28i Xline</option>
+                <option value="onix">Chevrolet Onix</option>
+            </select>
+            <div class="attributes">
+                <ul>
+                    <li>
+                        <label for="price">Preço (R$)</label>
+                        <input type="text" name="price" id="price" value="" disabled>
+                    </li>
+                    <li>
+                        <label for="engine">Motor</label>
+                        <input type="text" name="engine" id="engine" value="" disabled>
+                    </li>
+                    <li>
+                        <label for="capacity">Cilindrada (cm³)</label>
+                        <input type="text" name="capacity" id="capacity" value="" disabled>
+                    </li>
+                    <li>
+                        <label for="bodywork">Carroceria</label>
+                        <input type="text" name="bodywork" id="bodywork" value="" disabled>
+                    </li>
+                    <li>
+                        <label for="potency">Potência (cv)</label>
+                        <input type="text" name="potency" id="potency" value="" disabled>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+       <script src="./index.js"></script> 
+    </body>
+    </body>
+</html>

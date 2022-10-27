@@ -1,0 +1,129 @@
+:root {
+    --top-margin: 20px;
+}
+
+* {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./pool-table.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+}
+
+.card {
+    width: 400px;
+    min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: red;
+    border-radius: var(--top-margin);
+    padding-top: var(--top-margin);
+    padding-bottom: var(--top-margin);
+    border: 5px solid rgb(39, 39, 39);
+}
+
+.card-top {
+    background-image: linear-gradient(#000000,#676767, #000000);
+    
+    /* GAMBIARRA! */
+    width: calc(100% + 2px);
+    margin-left: -1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.carro-logo {
+    background-color: red;
+    font-style: italic;
+    font-weight: 800;
+    padding: 0px 10px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    border-radius: 3px;
+    border: 1px solid #535353;
+}
+
+#trait {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.card figure {
+    background-image: url(https://io.convertiez.com.br/m/feiradamadrugada/shop/products/images/418582841/medium/carrinho-passeio-brinquedo-infantil-colorido-no-atacado_182658.JPG);
+    background-position: center;
+    background-size: cover;
+    width: calc(100% - 20px);
+    height: 250px;
+    margin: 10px auto;
+    border: 2px solid white;
+}
+
+select {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    background-color: yellow;
+    border: 0px solid ;
+
+    cursor: pointer;
+
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+option {
+    font-size: 20px;
+}
+
+.attributes {
+    margin: 10px 10px 0px 10px;
+}
+
+.attributes li {
+    background-color: #ffd36d;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+    text-align: center;
+    width: 35%;
+}
+
+input {
+    background-color: white;
+    border: 0px;
+    text-align: center;
+    font-size: 20px;
+    width: 65%;
+    border-radius: 10px;
+    border-top: 2.5px solid black;
+    border-left: 2.5px solid black;
+    border-right: 2.5px solid rgb(175, 175, 175);
+    border-bottom: 2.5px solid rgb(175, 175, 175);
+}
+
+#test {
+    display: none;
+}
