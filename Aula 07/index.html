@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 07</title>
+    </head>
+    <body>
+        <form action="" class="player-data">
+            <h1>Preencha os campos abaixo com seus dados!</h2>
+            <div class="input-box">
+                <p>Nome</p>
+                <input type="text" id="playerName">
+            </div>
+            <div class="input-box">
+                <p>Data de nascimento</p>
+                <div class="date-input">
+                    <input type="text" maxlength="2" id="day" placeholder="-DD-">
+                    <input type="text" maxlength="2" id="month" placeholder="-MM-">
+                    <input type="text" maxlength="4" id="year" placeholder="-YYYY-">
+                </div>
+                <p class="error-message" id="date-error">*Data inválida!</p>
+            </div>
+            <div class="double-input">
+                <div class="input-box">
+                    <p>Peso (kg)</p>
+                    <input type="number" id="playerWeight">
+                    <p class="error-message" id="weight-error">*Peso inválido!</p>
+                </div>
+                <div class="input-box">
+                    <p>Altura (cm)</p>
+                    <input type="text" id="playerHeight">
+                </div>
+            </div>
+            <div class="input-box">
+                <p>Gênero</p>
+                <select name="gender" id="gender">
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="non-binary">Não-binário</option>
+                    <option value="other">Outro/prefiro não responder</option>
+                </select>
+            </div>
+            <input type="button" value="Confirmar" disabled id="confirm" onclick='logUser()'>
+        </form>
+        <section class="character-data"></section>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
