@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./calculadora.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Calculadora</title>
+</head>
+<body>
+    <section class="calculator">
+        <h1>Calculator</h1>
+        <h2>Try an operation below</h2>
+        <div class="input-box">
+            <label for="firstInput">First</label>
+            <input type="number" id="firstInput">
+        </div>
+        
+        <div class="input-box">
+            <label for="secondInput">Second</label>
+            <input type="number" id="secondInput">
+        </div>
+        <div class="operations">
+            <input type="button" value="+" onclick="calculate(this.value)">
+            <input type="button" value="-" onclick="calculate(this.value)">
+            <input type="button" value="x" onclick="calculate(this.value)">
+            <input type="button" value="÷" onclick="calculate(this.value)">
+            <input type="button" value="^" onclick="calculate(this.value)">
+        </div>
+        <div class="input-box">
+            <label for="output">Result</label>
+            <input type="text" id="output" disabled >
+        </div>
+    </section>
+    <p id="error-message"></p>
+    <script src="./calculadora.js"></script>
+</body>
+</html>

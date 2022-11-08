@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 09 - Days to death</title>
+    </head>
+    <body>
+        <form action="" class="player-data">
+            <h1>DAYS TO DEATH</h1>
+            <div class="input-box">
+                <p>Data de nascimento</p>
+                <div class="date-input">
+                    <input type="text" maxlength="2" id="day" placeholder="-DD-">
+                    <input type="text" maxlength="2" id="month" placeholder="-MM-">
+                    <input type="text" maxlength="4" id="year" placeholder="-YYYY-">
+                </div>
+                <p>Gênero</p>
+                <select name="gender" id="gender">
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="non-binary">Não-binário</option>
+                    <option value="other">Outro/prefiro não responder</option>
+                </select>
+            </div>
+            <p class="error-message" id="error-message">error placeholder</p>
+            <input type="button" value="Show me" id="confirm" onclick='daysToDeath()'>
+        </form>
+        <section class="death-count">
+            <figure class="skull"></figure>
+            <p id="timeRemaining"></p>
+        </section>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

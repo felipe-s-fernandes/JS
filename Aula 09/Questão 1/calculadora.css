@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+body {
+    padding: 40px;
+}
+
+.calculator {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+
+    border: 3px solid rgb(53, 53, 53);
+    box-shadow: -5px 5px 10px rgb(53, 53, 53);
+}
+
+.input-box {
+    width: 90%;
+    background-color: rgb(92 178 154);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-box label {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+.input-box input {
+    width: 50%;
+    text-align: center;
+    margin: 3px;
+    border-right: 1.5px solid rgb(175, 175, 175);
+    border-bottom: 1.5px solid rgb(175, 175, 175);
+}
+#output {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(53, 53, 53);
+    border-right: 1.5px solid rgb(175, 175, 175);
+    border-bottom: 1.5px solid rgb(175, 175, 175);
+}
+
+input[type="button"] {
+    width: 35px;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+    background-color: rgb(92 178 154);
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 1px rgb(46, 88, 76);
+    cursor: pointer;
+}
+input[type="button"]:hover {
+    background-color: rgb(77 204 167);
+}
+input[type="button"]:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 1px rgb(46, 88, 76);
+}
+
+#error-message {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    color: red;
+    font-size: 16px;
+}
