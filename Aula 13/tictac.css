@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(pink, green);
+}
+
+main {
+    flex-direction: column;
+}
+
+.wrapper {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.element {
+    user-select: none;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 4px 4px rgb(111, 111, 111);
+    transition: all 0.1s;
+}
+
+.element:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.element:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px rgb(111, 111, 111);
+}
+
+img {
+    width: 80%;
+    pointer-events: none;
+}
+
+#newGame {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 8px;
+
+    border: 1px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px rgb(111, 111, 111);
+    transition: all 0.1s;
+}
+
+#newGame:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+#newGame:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px rgb(111, 111, 111);
+}
+
+#player {
+    font-size: 24px;
+}
