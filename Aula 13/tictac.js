@@ -91,6 +91,7 @@ function resetGame() {
         button.dataset.clicked = 'false';
         message.textContent = 'Vez do Jogador: x'
         game = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+        turn = 'x';
         turnsPassed = 0;
     });
 };
