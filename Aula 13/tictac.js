@@ -42,6 +42,7 @@ function verifyRow(row) {
         };
     };
     if (count === 3) {
+        lightUp('row', row);
         return true;
     };
     return false;
@@ -55,6 +56,7 @@ function verifyColumn(column) {
         };
     };
     if (count === 3) {
+        lightUp('column', column)
         return true;
     };
     return false;
@@ -71,6 +73,11 @@ function verifyDiagonal() {
         };
     };
     if (count1 === 3 || count2 === 3) {
+        if (count1 === 3) {
+            lightUp('diag1');
+        } else {
+            lightUp('diag2');
+        }
         return true;
     };
     return false;
@@ -80,18 +87,43 @@ function resetGame() {
     buttons.forEach((button) => {
         button.innerHTML = '';
         button.style.pointerEvents = 'auto';
+        button.style.backgroundColor = 'white';
         button.dataset.clicked = 'false';
         message.textContent = 'Vez do Jogador: x'
         game = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
         turnsPassed = 0;
     });
-}
+};
+
+function lightUp(identification, k = 0) {
+    if (identification === 'row') {
+        for (let j = 0; j < 3; j++) {
+            buttons[3*k + j].style.backgroundColor = 'green';
+        };
+    };
+    if (identification === 'column') {
+        for (let i = 0; i < 3; i++) {
+            console.log(i, k)
+            buttons[3*i + k].style.backgroundColor = 'green';
+        };
+    };
+    if (identification === 'diag1') {
+        for (let i = 0; i < 3; i++) {
+            buttons[3*i + i].style.backgroundColor = 'green';
+        };
+    };
+    if (identification === 'diag2') {
+        for (let i = 0; i < 3; i++) {
+            buttons[3*i + 2-i].style.backgroundColor = 'green';
+        };
+    };
+};
 
 buttons.forEach((button) =>{
     button.addEventListener('click', (event) =>{
         const clickedButton = event.target;
-        const rowID = clickedButton.dataset.position[0];
-        const columnID = clickedButton.dataset.position[1];
+        const rowID = Number(clickedButton.dataset.position[0]);
+        const columnID = Number(clickedButton.dataset.position[1]);
 
         if (clickedButton.dataset.clicked === 'false') {
             game[rowID][columnID] = turn;
@@ -103,7 +135,6 @@ buttons.forEach((button) =>{
             if (turn === 'x') {turn = 'o'} else {turn = 'x'};
             message.textContent = `Vez do Jogador: ${turn}`;
         };
-
         turnsPassed++;
     });
 });
