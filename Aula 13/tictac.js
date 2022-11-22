@@ -22,7 +22,7 @@ function blockClick(element) {
 
 function verifyGame(row, column) {
     if (verifyRow(row) || verifyColumn(column) || verifyDiagonal()) {
-        blockClick(wrapper);
+        buttons.forEach((element) => blockClick(element));
         newGame.value = 'Jogar novamente';
         message.textContent = `Vencedor: ${turn}`;
         return 'end';
@@ -84,15 +84,15 @@ function verifyDiagonal() {
 };
 
 function resetGame() {
+    message.textContent = 'Vez do Jogador: x'
+    game = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+    turn = 'x';
+    turnsPassed = 0;
     buttons.forEach((button) => {
         button.innerHTML = '';
         button.style.pointerEvents = 'auto';
         button.style.backgroundColor = 'white';
         button.dataset.clicked = 'false';
-        message.textContent = 'Vez do Jogador: x'
-        game = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
-        turn = 'x';
-        turnsPassed = 0;
     });
 };
 
