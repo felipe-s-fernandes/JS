@@ -47,7 +47,7 @@ main {
     height: 100px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 4px 4px rgb(111, 111, 111);
+    box-shadow: 4px 4px 0px rgb(111, 111, 111);
     transition: all 0.1s;
 }
 

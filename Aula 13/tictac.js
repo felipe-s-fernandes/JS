@@ -1,5 +1,4 @@
 const buttons = document.querySelectorAll(".element");
-const wrapper = document.querySelector(".wrapper");
 const newGame = document.querySelector("#newGame");
 const message = document.querySelector("#player");
 
@@ -7,12 +6,12 @@ let turn = 'x';
 let turnsPassed = 0;
 let game = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
 
-function showSelection() {
+function showSelection(element) {
     if (turn === 'x') {
-        return '<img src="./assets/x.webp">'
+        element.innerHTML = '<img src="./assets/x.webp">'
     };
     if (turn === 'o') {
-        return '<img src="./assets/circle.png">'
+        element.innerHTML = '<img src="./assets/circle.png">'
     };
 };
 
@@ -28,6 +27,7 @@ function verifyGame(row, column) {
         return 'end';
     };
     if (turnsPassed === 8) {
+        buttons.forEach((element) => element.style.backgroundColor = 'pink');
         newGame.value = 'Jogar novamente';
         message.textContent = 'Deu velha!';
         return 'end';
@@ -97,6 +97,7 @@ function resetGame() {
 };
 
 function lightUp(identification, k = 0) {
+    buttons.forEach((element) => element.style.backgroundColor = 'pink');
     if (identification === 'row') {
         for (let j = 0; j < 3; j++) {
             buttons[3*k + j].style.backgroundColor = 'green';
@@ -131,7 +132,7 @@ buttons.forEach((button) =>{
             clickedButton.dataset.clicked = 'true';
         };
         blockClick(clickedButton);
-        clickedButton.innerHTML = showSelection();
+        showSelection(clickedButton);
         if (verifyGame(rowID, columnID) !== 'end') {
             if (turn === 'x') {turn = 'o'} else {turn = 'x'};
             message.textContent = `Vez do Jogador: ${turn}`;
