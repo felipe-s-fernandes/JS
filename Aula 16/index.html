@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 16 - Moedas</title>
+    </head>
+    <body>
+        <form>
+            <h1>Cotação do real</h1>
+            <p>Insira uma moeda e um período para exibir a cotação do real.</p>
+            <div class="input-box">
+                <label for="currency">Moeda</label>
+                <select name="currency" id="currency">
+                    <option value="USD" selected>Dólar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="CNY">Yuan Chinês</option>
+                    <option value="GBP">Libra Esterlina</option>
+                    <option value="JPY">Iene Japonês</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="start">Início</label>
+                <input type="date" name="end" id="start-date">
+            </div>
+            <div class="input-box">
+                <label for="end">Fim</label>
+                <input type="date" name="end" id="end-date">
+            </div>
+            
+            <button type="button" value="" id="request-button">Exibir cotação</button>
+            
+        </form>
+        <div id="table-container"></div>
+
+       <script src="./index.js"></script>
+    </body>
+</html>

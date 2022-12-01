@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border: 3px solid rgb(53, 53, 53);
+    box-shadow: -5px 5px 10px rgb(53, 53, 53);
+}
+
+.input-box {
+    width: 95%;
+    background-color: rgb(92 178 154);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.input-box label {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+.input-box input, .input-box #currency {
+    width: 50%;
+    text-align: center;
+    margin: 3px;
+    border-right: 1.5px solid rgb(175, 175, 175);
+    border-bottom: 1.5px solid rgb(175, 175, 175);
+}
+.output {
+    background-color: white;
+    border: 2px solid rgb(53, 53, 53);
+}
+
+button {
+    width: 50%;
+    height: 50px;
+    padding: 5px;
+    margin-top: 12px;
+    font-size: 18px;
+    
+    background-color: rgb(92 178 154);
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 1px rgb(46, 88, 76);
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(77 204 167);
+}
+button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 1px rgb(46, 88, 76);
+}
+
+#result {
+    background-color: aliceblue;
+    width: 90%;
+    min-height: 54px;
+    border: solid 2px rgb(53, 53, 53);
+    border-radius: 10px;
+
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+figure img {
+    width: 50%;
+}
+
+table {
+    margin: 50px auto 50px auto;
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.heading {
+    background-color: rgb(92 178 154);
+}
+
+.heading > td {
+    font-size: 18px;
+    color: white;
+}
+
+td {
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
