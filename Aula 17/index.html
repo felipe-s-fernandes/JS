@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 17 - CEP</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Consulte seu endereço</h1>
+            <div class="input-box cep">
+                <label for="cep">Digite seu cep:</label>
+                <input name="cep" type="text" maxlength="9" id="cep">
+            </div>
+            <button id="consult" class="botao">Consultar</button>
+        </div>
+        <section class="location-info wrapper"></section>
+        <section class="map wrapper"></section>
+
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
