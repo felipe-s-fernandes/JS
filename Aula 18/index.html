@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Aula 18 - Previsão do tempo</title>
+    </head>
+    <body>
+        <section class="wrapper selects">
+            <h1>Previsão do tempo!</h1>
+            <p>Selecione um estado e uma cidade para ver a previsão do tempo para os próximos 5 dias.</p>
+            <div class="states input-box">
+                <label for="estado">Estado</label>
+                <select name="estado" id="states">
+                    <option value="default" selected disabled>- Selecione um estado -</option>
+                </select>
+            </div>
+            <div class="districts"></div>
+        </section>
+        <script src="./previsao.js"></script>
+    </body>
+</html>
